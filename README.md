@@ -1,6 +1,6 @@
 # lcfcpy
 
-lcfcpy è uno script che ha lo scopo di essere un lanciatore per scrcpy e di comandi adb preimpostati, ottimizzato per abilitare ed usare la desktop mode dei dispositivi Android 10 o superiore.
+lcfcpy è uno script che ha lo scopo di essere un lanciatore per [scrcpy] e di comandi [adb] preimpostati, ottimizzato per abilitare ed usare la desktop mode dei dispositivi Android 10 o superiore.
 
 ## Dipendenze e versioni
 
@@ -10,6 +10,7 @@ La prima denominata dal singolo script **lcfcpy** è uno script per chi non ha g
 Per installare scrcpy rimando alla pagina ufficiale : [github scrcpy]
 
 [github scrcpy]: https://github.com/Genymobile/scrcpy
+[scrcpy]: https://github.com/Genymobile/scrcpy
 
 Per installare adb tools:
 
@@ -21,6 +22,7 @@ Per installare adb tools:
 per maggiori informazioni rimando alla pagina ufficiale di [adb tools]
 
 [adb tools]: https://developer.android.com/studio/command-line/adb
+[adb]: https://developer.android.com/studio/command-line/adb
 
 La seconda versione è contenuto all’interno della cartella **Lcfcpy_tmux**,  al suo interno troverete tre script che devono stare necessariamente insieme perché il primo “**lcfcpy.sh**” serve a richiamare il secondo “**variables_script.sh**” che contiene i comandi adb e di scrcpy con annesse le relative variabili. Per funzionare correttamente è necessario installare oltre a **scrcpy** e **adb tools** anche **tmux** (terminal multiplexr disponibile nei maggiori repo [Tmux github]).
 
