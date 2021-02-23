@@ -57,10 +57,23 @@ bit_rate=8M                      #valore es. 2M per Wifi o 8M per USB
 
 rotazione_schermo=0              #valori da 0 a 3
 
+schedarete=wlp2s0 		   
+#necessita di ifstat installato, inserire il nome della scheda di rete desiderata
+
 tastiera_predefinita=nome_completo_vostra tastiera 
 # adb shell ime list -a -s (per sapere il nome completo della vostra tastiera)
 
 ```
+Per la versione con **Tmux** occorre inserire il percorso completo degli script `variables_script.sh` `saluti.sh`, queste due variabili si trovano all'interno del lanciatore `lcfcpy.sh`
+
+```
+variables_script='percorso/script/completo/Lcfcpy_tmux/variables_script.sh'
+saluti=percorso/script/completo/Lcfcpy_tmux/saluti.sh
+```
+Per sapere il percorso completo degli script entrare dentro la directory **Lcfcpy_tmux** e digitare da terminale `pwd`
+
+
+
 ## Esecuzione
 
 Verificare che lo script abbia i permessi di esecuzione e digitare `./lcfcpy.sh` o `Lcfcpy_tmux/lcfcpy.sh`a secondo della versione scaricata.
