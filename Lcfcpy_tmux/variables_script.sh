@@ -13,14 +13,14 @@ display=1                          #id schermo
 
 ip_dispositivo=0.0.0.0:5555        #ip dispositivo più porta :5555
 
-bit_rate=8M			                   #valore es. 2M per Wifi o 8M per USB
+bit_rate=8M			   #valore es. 2M per Wifi o 8M per USB
 
-rotazione_schermo=0	               #valori da 0 a 3
+rotazione_schermo=0	           #valori da 0 a 3
 
-schedarete=wlp2s0 		   
+schedarete=wlp2s0
 #necessita di ifstat installato, inserire il nome della scheda di rete desiderata
 
-tastiera_predefinita=com.touchtype.swiftkey/com.touchtype.KeyboardService   
+tastiera_predefinita=com.touchtype.swiftkey/com.touchtype.KeyboardService
 #adb shell ime list -a -s per sapere il nome completo tastiera
 
 
@@ -33,7 +33,7 @@ echo "==========================================================================
 echo "=====   Digita il Carattere/Numero Associato   =======   x per uscire   ========"
 echo "================================================================================"
 echo " 							  Device IP $ip_dispositivo "
-echo " 1) Abilita display secondario ($risoluzione ID display=$display)"
+echo " 1) Abilita display secondario ($risoluzione; ID display=$display; Bit-rate=$bit_rate)"
 echo " 2) Riavvia il dispositivo per la Desktop mode (Solo con esito positivo step 1)"
 echo " 3) Abilita adb in WiFi (il dispositivo deve essere connesso con cavo usb)"
 echo " 4) Connete adb in Wifi (il dispositivo deve essere connesso nella stessa rete)"
@@ -115,7 +115,7 @@ b)
 n)
  clear
  tmux split-window -h -p 25 "ifstat -i  $schedarete"
- exec $0;; 
+ exec $0;;
 
 h)
   clear
