@@ -22,6 +22,10 @@ rotazione_schermo=0	               #valori da 0 a  3
 ripristina_tastiera=com.touchtype.swiftkey/com.touchtype.KeyboardService
 # adb shell ime list -a -s ( per sapere il nome completo della vostra tastiera )
 
+#colore
+red="\e[1;31m"
+reset="\e[0m"
+bold="\e[1m"
 ######################################################################################
 ######################################################################################
 echo "--------------------------------------------------------------------------------"
@@ -34,7 +38,8 @@ echo "==========================================================================
 echo "=====   Digita il Carattere/Numero Associato   =======   x per uscire   ========"
 echo "================================================================================"
 echo " 							  Device IP $ip_dispositivo "
-echo " 1) Abilita display secondario $risoluzione "
+echo ""
+echo " 1) Abilita display secondario ($risoluzione; ID display=$display; Bit-rate=$bit_rate)"
 echo " 2) Riavvia il dispositivo per la Desktop mode (Solo con esito positivo step 1)"
 echo " 3) Abilita adb in WiFi (il dispositivo deve essere connesso con cavo usb)"
 echo " 4) Connete adb in Wifi (il dispositivo deve essere connesso nella stessa rete)"
@@ -105,7 +110,11 @@ esac
 
  	function restore {
 		 clear
-		 echo "Ciao Ciao!"
+		 echo ""
+		 echo -e "${bold} Visita ${red} andrealucifero.it ${reset}"
+		 echo ""
+		 echo "	  Ciao Ciao!"
+		 echo ""
 		exit
 	}
 
