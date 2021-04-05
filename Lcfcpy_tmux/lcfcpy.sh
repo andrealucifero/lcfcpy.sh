@@ -44,7 +44,7 @@ tmux a;
 function saluti {
 
                 clear
-echo -e "       ${bold}andrealucifero.it${reset}"
+echo -e "                ${bold}andrealucifero.it${reset}"
 
 echo "+------------------------------------------------+"
 echo "|                .,;clooooolc:,.                 |"
@@ -67,8 +67,7 @@ echo "|      ,:,,;;oWNNWc:::::::::::ccccccccccl:.      |"
 echo "|        .,:;oWNNWc:::::::::::cccccccl:'         |"
 echo "|           .'oOXWc:::::::::::cclc;'.            |"
 echo "|                .,;clooddool:;.                 |"
-echo "+------------------------------------------------+"		
-
+echo "+------------------------------------------------+"
 		count=1
 		while [ $count -lt 1000 ]
 		do
