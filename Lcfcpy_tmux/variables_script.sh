@@ -33,6 +33,7 @@ echo "==========================================================================
 echo "=====   Digita il Carattere/Numero Associato   =======   x per uscire   ========"
 echo "================================================================================"
 echo " 							  Device IP $ip_dispositivo "
+echo ""
 echo " 1) Abilita display secondario ($risoluzione; ID display=$display; Bit-rate=$bit_rate)"
 echo " 2) Riavvia il dispositivo per la Desktop mode (Solo con esito positivo step 1)"
 echo " 3) Abilita adb in WiFi (il dispositivo deve essere connesso con cavo usb)"
